@@ -1,0 +1,33 @@
+# Ignore everything by default
+*
+
+# Keep this file
+!.gitignore
+
+# --- Profile folders ---
+# Un-ignore printer, print, and filament profile directories
+!printer/
+!printer/*Voron*.ini
+!printer/*VT*
+!physical_printer/
+!physical_printer/Poseidon.ini
+!print/
+!print/*VT*.ini
+!filament/
+!filament/*VT*.ini
+
+# --- Exclude noisy stuff even if inside un-ignored dirs ---
+# (these can show up in profile folders sometimes)
+*.bak
+*.tmp
+*.lock
+*.autosave
+
+# --- Still ignore logs, cache, previews, recent projects ---
+logs/
+cache/
+http-cache/
+gcodeviewer-cache/
+sl1-cache/
+recent_*.json
+window-state.json

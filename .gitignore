@@ -6,14 +6,10 @@
 
 # --- Profile folders ---
 # Un-ignore printer, print, and filament profile directories
-!printer/
-!printer/*Voron*.ini
-!printer/*VT*
-!physical_printer/
+# !printer/*Voron*.ini
+# !printer/*VT*
 !physical_printer/Poseidon.ini
-!print/
 !print/*VT*.ini
-!filament/
 !filament/*VT*.ini
 
 # --- Exclude noisy stuff even if inside un-ignored dirs ---

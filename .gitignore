@@ -5,11 +5,20 @@
 !.gitignore
 
 # --- Profile folders ---
-# Un-ignore printer, print, and filament profile directories
-# !printer/*Voron*.ini
-# !printer/*VT*
+# A directory excluded by "*" cannot have files re-included inside it, so each
+# folder is un-ignored first, its contents re-ignored, then the keepers listed.
+!printer/
+printer/*
+!printer/*Voron*.ini
+!printer/voron_bed*.*
+!physical_printer/
+physical_printer/*
 !physical_printer/Poseidon.ini
+!print/
+print/*
 !print/*VT*.ini
+!filament/
+filament/*
 !filament/*VT*.ini
 
 # --- Exclude noisy stuff even if inside un-ignored dirs ---

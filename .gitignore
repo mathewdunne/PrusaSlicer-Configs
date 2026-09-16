@@ -17,9 +17,11 @@ physical_printer/*
 !print/
 print/*
 !print/*VT*.ini
+!print/*INDX*.ini
 !filament/
 filament/*
 !filament/*VT*.ini
+!filament/*INDX*.ini
 
 # --- Exclude noisy stuff even if inside un-ignored dirs ---
 # (these can show up in profile folders sometimes)
